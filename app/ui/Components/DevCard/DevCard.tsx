@@ -8,13 +8,13 @@ import Tag from "./Tag";
 export type DetailType = {
   userName: string;
   userAva?: string;
-  userDesc: string[];
+  userDesc: string;
   userDOB: string;
   gitLink?: string;
   tags: string[];
 };
 
-export default function DevCard(user: DetailType) {
+const DevCard: React.FC<DetailType> = (user) => {
   const [width, setWidth] = useState(0);
   const [height, setHeight] = useState(0);
 
@@ -40,11 +40,13 @@ export default function DevCard(user: DetailType) {
       <div className={styles.cardContainer}>
         <div className={styles.cardTop}>
           <Image
+            width={130}
+            height={130}
             alt={user.userName}
             className={styles.userAvt}
             src={user.userAva ? user.userAva : "/assets/defaultAvt.jpg"}
           />
-          <div className={styles.textDescription}></div>
+          <div className={styles.textDescription}>{user.userDesc}</div>
         </div>
         <div className={styles.cardBottom}>
           <div className={styles.userInfo}>
@@ -61,4 +63,6 @@ export default function DevCard(user: DetailType) {
       </div>
     </div>
   );
-}
+};
+
+export default DevCard;

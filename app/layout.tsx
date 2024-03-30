@@ -2,14 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./ui/Components/Navigation";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Portfolio",
   description: "My porfolio site",
-  authors: [{ name: "Nguyen Ngoc Huu Thong", url: "https://github.com/NHTNg" }],
-  creator: "Nguyen Ngoc Huu Thong",
+  authors: [{ name: "NguyenNgocHuuThong", url: "https://github.com/NHTNg" }],
+  creator: "NguyenNgocHuuThong",
   keywords: ["Next.js", "React", "JavaScript"],
   applicationName: "My Portfolio Website",
   icons: { icon: "/icon.ico" },

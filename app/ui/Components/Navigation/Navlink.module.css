@@ -1,11 +1,46 @@
+.navigationClose {
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 0;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 0px;
+  transition: height 2s;
+  background: rgba(37, 14, 66, 0.8);
+  backdrop-filter: blur(20px);
+  width: 100%;
+  z-index: 1;
+}
+
+.navigationClose li {
+  list-style: none;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.navigationClose li a {
+  text-decoration: none;
+}
+
 .navbar {
-  background: #250e42;
+  background: rgba(37, 14, 66, 0.8);
+  backdrop-filter: blur(20px);
   display: flex;
   gap: 100px;
   justify-content: center;
   align-items: center;
-  min-height: 120px;
-  height: 120px;
+  height: 100px;
+  transition: height 2s;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1;
 }
 
 .navbar li {
@@ -13,8 +48,23 @@
   color: white;
   font-size: 30px;
   font-weight: 500;
+  opacity: 1;
+  transition: opacity 2s;
 }
 
 .navbar li a {
   text-decoration: none;
+}
+
+.toggleBtn {
+  width: 80px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.active {
+  border-bottom: 0.5px solid white;
 }

@@ -1,0 +1,76 @@
+.intro {
+  padding: 0;
+  margin: 0;
+  width: 100dvw;
+  height: 100dvh;
+}
+.container {
+  margin: 200px 400px;
+}
+.smallContainer{
+  margin: 20px 400px;
+}
+.outerContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.introLeft {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content > h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+
+.content > h3 {
+  font-size: 26px;
+  font-weight: normal;
+  text-align: justify;
+  margin: 100px 0;
+}
+
+.introRight {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.downloadBtn {
+  margin-left: 180px;
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  background: var(--btnColor);
+  font-size: 23px;
+  font-weight: bold;
+  border: none;
+}
+
+.disableBtn {
+  margin-left: 180px;
+  width: 300px;
+  height: 70px;
+  border-radius: 10px;
+  background: var(--btnColor);
+  font-size: 23px;
+  font-weight: bold;
+  border: none;
+}
+
+.downloadBtn:hover {
+  background-color: var(--btnColorActive);
+}
+
+.downloadBtn:active {
+  background-color: var(--btnColorActive);
+  transform: translateY(7px);
+}

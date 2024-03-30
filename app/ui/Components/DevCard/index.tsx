@@ -6,7 +6,7 @@ const myArr: DetailType[] = [
   {
     userName: 'Ngoc "HT" Nguyen',
     userAva: "/assets/userAvata.png",
-    userDesc: [],
+    userDesc: "Let's us suffer together",
     userDOB: "Aug12, 95",
     gitLink:"https://github.com/NHTNg",
     tags: [

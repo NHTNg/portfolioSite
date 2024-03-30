@@ -4,7 +4,7 @@
   background-color: #43007a;
   padding: 10px 10px;
   border-radius: 20px;
-  margin-top: 150px;
+  margin-top: 180px;
   transform-style: preserve-3d;
 }
 
@@ -13,7 +13,7 @@
   height: 100%;
   background-color: aliceblue;
   border-radius: 15px;
-  transform: translate3d(0, 0, 30px);
+  transform: translate3d(0, 0, 20px);
 }
 
 /* Card top */
@@ -53,7 +53,7 @@
   width: 297px;
   height: 71px;
   border-radius: 12px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   line-height: 71px;
