@@ -1,11 +1,5 @@
-import Education from "../ui/Components/About/Education";
-import Introduction from "../ui/Components/About/Introduction";
+import AboutPage from "../ui/Components/About";
 
-export default function aboutPage() {
-  return (
-    <>
-      <Introduction />
-      <Education />
-    </>
-  );
+export default function aboutpage() {
+  return <AboutPage />;
 }

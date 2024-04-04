@@ -1,6 +1,3 @@
-
 export default function works() {
-  return (
-    <div>works page</div>
-  )
+  return <section>works page</section>;
 }

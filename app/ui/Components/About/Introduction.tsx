@@ -3,11 +3,10 @@ import React, { useState } from "react";
 import styles from "./about.module.css";
 import Image from "next/image";
 
-const url = "/files/resume.pdf";
-
 export default function Introduction() {
   const [disable, setDisable] = useState<boolean>(false);
   let timeoutID;
+
   const download = (url: string) => {
     setDisable(true);
     fetch(url)
@@ -30,12 +29,12 @@ export default function Introduction() {
   clearTimeout(timeoutID);
 
   return (
-    <section id="intro" className={styles.intro}>
+    <div id="intro" className={styles.section}>
       <div className={styles.container}>
         <div className={styles.outerContent}>
           <div className={styles.introLeft}>
             <div className={styles.content}>
-              <h1>So, Who Am I?</h1>
+              <h1>Who Am I?</h1>
               <h3>
                 “My name is Nguyen Ngoc Huu Thong. I am a front-end developer
                 with expertise in technologies such as HTML, CSS, JavaScript,
@@ -46,7 +45,7 @@ export default function Introduction() {
             <button
               disabled={disable ? true : false}
               className={disable ? styles.disableBtn : styles.downloadBtn}
-              onClick={() => download(url)}
+              onClick={() => download("/files/resume.pdf")}
             >
               Download my Résumé
             </button>
@@ -55,12 +54,12 @@ export default function Introduction() {
             <Image
               src="/assets/userAvata.png"
               alt="user"
-              width={350}
+              width={470}
               height={470}
             />
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

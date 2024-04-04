@@ -6,11 +6,8 @@
 
 html,
 body {
-  overflow-x: hidden;
   color-scheme: dark;
-  perspective: 1000px;
 }
-
 
 .main {
   display: flex;
@@ -19,7 +16,9 @@ body {
   overflow: hidden;
 }
 
-:root{
+:root {
   --btnColor: #61009f;
   --btnColorActive: #752ba3;
 }
+
+

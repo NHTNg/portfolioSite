@@ -1,0 +1,27 @@
+.icon {
+  width: 100px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: white;
+}
+
+.icon:active p {
+  background-color: rgb(6, 6, 255);
+}
+
+.icon p {
+  font-size: 14px;
+  text-align: center;
+  font-weight: 300;
+}
+
+.icon:hover {
+  cursor: pointer;
+}

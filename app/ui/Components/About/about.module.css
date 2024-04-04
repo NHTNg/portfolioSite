@@ -1,47 +1,30 @@
-.intro {
+.section {
   padding: 0;
-  margin: 0;
-  width: 100dvw;
-  height: 100dvh;
+  margin-top: 8rem;
 }
 .container {
-  margin: 200px 400px;
+  margin: 0 20rem;
 }
-.smallContainer{
-  margin: 20px 400px;
-}
+
 .outerContent {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.introLeft {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  gap: 6rem;
 }
 
 .content > h1 {
-  font-size: 60px;
+  font-size: 3.8rem;
   font-weight: 800;
+  color: black;
 }
 
 .content > h3 {
-  font-size: 26px;
-  font-weight: normal;
+  font-size: 1.7rem;
+  font-weight: 500;
   text-align: justify;
-  margin: 100px 0;
-}
-
-.introRight {
-  width: 50%;
-  display: flex;
-  justify-content: center;
+  margin: 4rem 0;
+  color: black;
 }
 
 .downloadBtn {
@@ -73,4 +56,27 @@
 .downloadBtn:active {
   background-color: var(--btnColorActive);
   transform: translateY(7px);
+}
+
+/* ===================== */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  margin-top: 3.125rem;
+}
+
+.educationDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6.25rem;
+}
+
+.educationDetails h2 {
+  text-align: start;
+  font-size: 2rem;
+  font-weight: 400;
+  color: black;
 }
