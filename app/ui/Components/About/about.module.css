@@ -80,3 +80,39 @@
   font-weight: 400;
   color: black;
 }
+
+/* ===============SKILL COMPONENT================== */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 0.25rem;
+  width: fit-content;
+  justify-content: center;
+  margin: 6.25rem auto;
+}
+
+.gridImg {
+  aspect-ratio: 1;
+  object-fit: cover;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  transition: 500ms clip-path;
+  grid-column: span 2;
+}
+
+.gridImg:nth-of-type(4) {
+  grid-column: 2 / span 2;
+}
+
+.gallery:hover > img {
+  filter: brightness(0.5);
+  transition: 500ms filter;
+}
+
+.gallery img:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: 100;
+  filter: brightness(1);
+  transition: 500ms filter, 500ms clip-path;
+}

@@ -10,6 +10,7 @@
   overflow-y: hidden;
   outline: 1px solid rgb(124, 124, 124);
   outline-offset: -3px;
+  resize: both;
 }
 
 /* Scrollbar Customisation */
@@ -18,6 +19,7 @@
   max-height: 94%;
   background: rgb(212, 212, 212);
   overflow-y: scroll;
+  overflow-x: scroll;
   border: 1px solid rgb(161, 161, 161);
 }
 
@@ -47,6 +49,20 @@
 }
 
 .contentFrame::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url("/imagesDesktop/arrowup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contentFrame::-webkit-scrollbar-button:horizontal:increment {
+  background-image: url("/imagesDesktop/arrowdown.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contentFrame::-webkit-scrollbar-button:horizontal:decrement {
   background-image: url("/imagesDesktop/arrowup.png");
   background-position: center;
   background-repeat: no-repeat;

@@ -23,7 +23,7 @@ export default function WindowsDesktop({
         <Icon
           href="/about"
           iconTitle="About Me"
-          iconImg="/imagesDesktop/mydocs.png"
+          iconImg="/imagesDesktop/document.png"
         />
         <Icon href="" iconTitle="My Works" iconImg="/imagesDesktop/docs.png" />
         <Icon

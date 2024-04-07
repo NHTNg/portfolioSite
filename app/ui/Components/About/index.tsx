@@ -7,8 +7,8 @@ export default function AboutPage() {
   return (
     <Frame>
       <Introduction />
-      <SkillsAbillities />
       <Education />
+      <SkillsAbillities />
     </Frame>
   );
 }
