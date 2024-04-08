@@ -13,7 +13,7 @@ export default function Icon({
 }) {
   return (
     <Link href={href} className={styles.icon}>
-      <Image src={iconImg} width={60} height={60} alt={iconTitle} />
+      <Image src={iconImg} width={50} height={50} alt={iconTitle} />
       <p>{iconTitle}</p>
     </Link>
   );

@@ -1,14 +1,15 @@
 "use client";
 import type { DetailType } from "./DevCard";
 import DevCard from "./DevCard";
+import styles from "./DevCard.module.css"
 
 const myArr: DetailType[] = [
   {
     userName: 'Ngoc "HT" Nguyen',
     userAva: "/assets/userAvata.png",
-    userDesc: "Let's us suffer together",
+    userDesc: "Let's us suffer together :))",
     userDOB: "Aug12, 95",
-    gitLink:"https://github.com/NHTNg",
+    gitLink: "https://github.com/NHTNg",
     tags: [
       "webdev",
       "reactjs",
@@ -26,5 +27,11 @@ const myArr: DetailType[] = [
 ];
 
 export default function DeveloperCard() {
-  return myArr.map((user) => <DevCard {...user} key={user.userName} />);
+  return (
+    <div className={styles.flexContainer}>
+      {myArr.map((user) => (
+        <DevCard {...user} key={user.userName} />
+      ))}
+    </div>
+  );
 }

@@ -31,6 +31,7 @@ export default function WindowsDesktop({
           iconTitle="Recycle Bin"
           iconImg="/imagesDesktop/bin.png"
         />
+        <Icon href="/devcard" iconTitle="Devcard.exe" iconImg="/imagesDesktop/devcardIcon.png"/>
       </div>
       {children}
       <Taskbar />

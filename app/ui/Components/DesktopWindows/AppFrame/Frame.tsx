@@ -9,40 +9,30 @@ const Frame = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <div className={styles.frame}>
-      <div className={styles.outterShell}>
-        <div className={styles.windowsTitle}>
-          <div className={styles.windowsLeft}>
-            <img className={styles.icon} src="/imagesDesktop/notepad.png" />
-            <p className={styles.title}>
-              {titleContent.charAt(0).toLocaleUpperCase() +
-                titleContent.slice(1)}{" "}
-              - Notepad
-            </p>
-          </div>
-          <div className={styles.btnSet}>
-            <Link href="" className={styles.btnLink}>
-              <img
-                className={styles.btnExit}
-                src="/imagesDesktop/Minimize.png"
-              />
-            </Link>
-            <Link href="" className={styles.btnLink}>
-              <img
-                className={styles.btnExit}
-                src="/imagesDesktop/Maximize.png"
-              />
-            </Link>
-            <Link href="/" className={styles.btnLink}>
-              <img className={styles.btnExit} src="/imagesDesktop/Cross.png" />
-            </Link>
-          </div>
+      <div className={styles.windowsTitle}>
+        <div className={styles.windowsLeft}>
+          <img className={styles.icon} src="/imagesDesktop/notepad.png" />
+          <p className={styles.title}>
+            {titleContent.charAt(0).toLocaleUpperCase() + titleContent.slice(1)}{" "}
+          </p>
         </div>
-        <div className={styles.windowsMenu}>
-          <button>File</button>
-          <button>Edit</button>
-          <button>Search</button>
-          <button>Help</button>
+        <div className={styles.windowsRight}>
+          <Link href="" className={styles.btnLink}>
+            <img className={styles.btnExit} src="/imagesDesktop/Minimize.png" />
+          </Link>
+          <Link href="" className={styles.btnLink}>
+            <img className={styles.btnExit} src="/imagesDesktop/Maximize.png" />
+          </Link>
+          <Link href="/" className={styles.btnLink}>
+            <img className={styles.btnExit} src="/imagesDesktop/Cross.png" />
+          </Link>
         </div>
+      </div>
+      <div className={styles.windowsMenu}>
+        <button>File</button>
+        <button>Edit</button>
+        <button>Search</button>
+        <button>Help</button>
       </div>
       <div className={styles.contentFrame}>{children}</div>
     </div>
