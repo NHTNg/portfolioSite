@@ -19,6 +19,54 @@ body {
 :root {
   --btnColor: #61009f;
   --btnColorActive: #752ba3;
+  --windowsBackgroundMain: rgba(192, 192, 192, 1);
+  --windowsBackgroundPrimary: rgba(124, 124, 124, 1);
+  --windowsBackgroundSecondary: rgba(136, 136, 136, 1);
+  --windowsBackgroundSub: rgba(223, 223, 223, 1);
+  --windowsBackgroundSub2: rgb(189, 189, 189);
+  --windowsBackgroundTitlePrimary: rgba(0, 0, 123, 1);
+  --windowsBackgroundTitleSecondary: rgba(16, 133, 210, 1);
 }
 
+*::-webkit-scrollbar {
+  width: 17px;
+  box-shadow: -1px 0 0 1px black;
+}
 
+*::-webkit-scrollbar-track {
+  background-color: var(--windowsBackgroundSub);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--windowsBackgroundSub2);
+  border-left: 1px solid var(--windowsBackgroundSub);
+  box-shadow: -1px -1px 0 0.5px rgba(0, 0, 0, 1) inset;
+}
+
+*::-webkit-scrollbar-button:vertical:decrement {
+  background-image: url("/imagesDesktop/arrowup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+*::-webkit-scrollbar-button:vertical:increment {
+  background-image: url("/imagesDesktop/arrowdown.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+*::-webkit-scrollbar-button:horizontal:increment {
+  background-image: url("/imagesDesktop/arrowdown.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+*::-webkit-scrollbar-button:horizontal:decrement {
+  background-image: url("/imagesDesktop/arrowdown.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}

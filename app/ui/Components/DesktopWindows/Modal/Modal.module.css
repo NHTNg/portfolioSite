@@ -1,0 +1,54 @@
+.modalOpen {
+  display: flex;
+  background-color: var(--windowsBackgroundMain);
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  left: 10px;
+  bottom: 60px;
+  animation: open 100ms linear;
+  z-index: 0;
+}
+
+.modalClose {
+  display: none;
+}
+
+.side {
+  background-image: linear-gradient(
+    -180deg,
+    var(--windowsBackgroundTitlePrimary),
+    var(--windowsBackgroundTitleSecondary)
+  );
+  width: 10%;
+}
+
+.side p {
+  transform: rotateZ(-90deg);
+  margin-top: 28rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.contentList {
+  width: 100%;
+}
+
+.contentList button {
+  display: block;
+  background-color: var(--windowsBackgroundMain);
+  width: 100%;
+  height: 80px;
+  padding: 5px;
+  margin: 5px 0;
+  border: none;
+}
+
+@keyframes open {
+  from {
+    transform: translateY(50%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
