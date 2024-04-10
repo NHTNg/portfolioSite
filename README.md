@@ -1,3 +1,5 @@
+Hi, this is my very first project that I made myself, please forgive any mistakes that I made. Your feedback is highly valuable to me. Thank you!
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
