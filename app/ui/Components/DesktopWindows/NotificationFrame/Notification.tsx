@@ -1,29 +1,17 @@
-"use client";
 import Link from "next/link";
-import styles from "./WindowsFrame.module.css";
-import { usePathname } from "next/navigation";
+import styles from "../AppFrame/WindowsFrame.module.css";
 import Image from "next/image";
 
-const Frame = ({ children }: { children: React.ReactNode }) => {
-  const pathname = usePathname();
-  const titleContent = pathname.slice(1);
-
+export default function Notification({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <div className={styles.frame}>
+    <div className={styles.notificationFrame}>
       <div className={styles.windowsTitle}>
         <div className={styles.windowsLeft}>
-          <Image
-            alt=""
-            width={0}
-            height={0}
-            sizes="100vw"
-            style={{ width: "100%", height: "20px" }}
-            className={styles.icon}
-            src="/imagesDesktop/notepad.png"
-          />
-          <p className={styles.title}>
-            {titleContent.charAt(0).toLocaleUpperCase() + titleContent.slice(1)}{" "}
-          </p>
+          <p className={styles.title}>404 - Not found!</p>
         </div>
         <div className={styles.windowsRight}>
           <Link href="" className={styles.btnLink}>
@@ -61,15 +49,7 @@ const Frame = ({ children }: { children: React.ReactNode }) => {
           </Link>
         </div>
       </div>
-      <div className={styles.windowsMenu}>
-        <button>File</button>
-        <button>Edit</button>
-        <button>Search</button>
-        <button>Help</button>
-      </div>
-      <div className={styles.contentFrame}>{children}</div>
+      <div className={styles.noti}>{children}</div>
     </div>
   );
-};
-
-export default Frame;
+}

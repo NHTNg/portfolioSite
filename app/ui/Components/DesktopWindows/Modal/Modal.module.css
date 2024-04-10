@@ -1,13 +1,14 @@
 .modalOpen {
-  display: flex;
+  border: 1px solid var(--windowsBackgroundPrimary);
+  padding: 2px;
   background-color: var(--windowsBackgroundMain);
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: auto;
   position: absolute;
   left: 10px;
   bottom: 60px;
   animation: open 100ms linear;
-  z-index: 0;
+  display: flex;
 }
 
 .modalClose {
@@ -21,11 +22,14 @@
     var(--windowsBackgroundTitleSecondary)
   );
   width: 10%;
+  position: relative;
 }
 
-.side p {
+.side span {
+  position: absolute;
+  bottom: 55px;
+  left: -55px;
   transform: rotateZ(-90deg);
-  margin-top: 28rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
@@ -34,14 +38,35 @@
   width: 100%;
 }
 
+.contentList a {
+  padding-left: 5px;
+  text-decoration: none;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentList a:hover,
+.contentList a:hover button {
+  background-color: var(--windowsBackgroundTitlePrimary);
+  color: white;
+}
+
 .contentList button {
   display: block;
-  background-color: var(--windowsBackgroundMain);
+  background-color: transparent;
   width: 100%;
-  height: 80px;
-  padding: 5px;
-  margin: 5px 0;
   border: none;
+  height: 100%;
+  padding-left: 20px;
+  color: black;
+  text-align: start;
+  font-weight: 500;
+}
+
+.contentList button::first-letter {
+  text-decoration: underline;
 }
 
 @keyframes open {
@@ -51,4 +76,17 @@
   to {
     transform: translateY(0);
   }
+}
+
+/* ================================= */
+
+.inactiveLink {
+  text-decoration: none;
+  padding-left: 5px;
+  text-decoration: none;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.6;
 }

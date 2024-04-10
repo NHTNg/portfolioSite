@@ -1,4 +1,31 @@
+.notificationFrame {
+  padding: 3px;
+  height: 200px;
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--windowsBackgroundMain);
+  box-shadow: 1.5px 1.5px 1px black;
+  outline: 1px solid var(--windowsBackgroundPrimary);
+  outline-offset: -3px;
+  overflow: hidden;
+}
 
+.noti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 50px);
+  padding: 10px;
+  gap: 5px
+}
+
+.noti h3{
+  color: black;
+  text-align: justify;
+}
 
 .frame {
   padding: 3px;
