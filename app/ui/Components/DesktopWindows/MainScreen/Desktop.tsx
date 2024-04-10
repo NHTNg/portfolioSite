@@ -31,14 +31,14 @@ export default function WindowsDesktop({
           iconImg="/imagesDesktop/github.png"
         />
         <Icon
-          href=""
-          iconTitle="Recycle Bin"
-          iconImg="/imagesDesktop/bin.png"
-        />
-        <Icon
           href="/devcard"
           iconTitle="Devcard.exe"
           iconImg="/imagesDesktop/devcardIcon.png"
+        />
+        <Icon
+          href=""
+          iconTitle="Recycle Bin"
+          iconImg="/imagesDesktop/bin.png"
         />
       </div>
       {children}
