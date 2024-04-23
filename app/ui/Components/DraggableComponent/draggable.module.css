@@ -1,0 +1,17 @@
+.dragContainer {
+  border: 1px solid white;
+  height: 800px;
+  width: 800px;
+  overflow: hidden;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: brown;
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+}

@@ -1,6 +1,7 @@
 import styles from "./Desktop.module.css";
 import Icon from "../DesktopIcon/DesktopIcon";
 import Taskbar from "../Taskbar/Taskbar";
+import useDragger from "@/app/hooks/useDragger";
 
 export default function WindowsDesktop({
   children,

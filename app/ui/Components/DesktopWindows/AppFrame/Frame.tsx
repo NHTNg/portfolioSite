@@ -4,12 +4,18 @@ import styles from "./WindowsFrame.module.css";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-const Frame = ({ children }: { children: React.ReactNode }) => {
+const Frame = ({
+  children,
+  id,
+}: {
+  children: React.ReactNode;
+  id?: string;
+}) => {
   const pathname = usePathname();
   const titleContent = pathname.slice(1);
 
   return (
-    <div className={styles.frame}>
+    <div className={styles.frame} id={id}>
       <div className={styles.windowsTitle}>
         <div className={styles.windowsLeft}>
           <Image
